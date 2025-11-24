@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>90</y>
+      <width>250</width>
+      <height>350</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <property name="leftMargin">
+      <number>15</number>
+     </property>
+     <property name="topMargin">
+      <number>15</number>
+     </property>
+     <property name="rightMargin">
+      <number>15</number>
+     </property>
+     <property name="bottomMargin">
+      <number>15</number>
+     </property>
+
+     <!-- TITLE -->
+     <item>
+      <widget class="QLabel" name="label_title">
+       <property name="text">
+        <string>&lt;html&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;span style=" font-size:18pt; font-weight:600;"&gt;MENU PMI&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+
+     <!-- SUB TITLE -->
+     <item>
+      <widget class="QLabel" name="label_subtitle">
+       <property name="text">
+        <string>&lt;html&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;span style=" font-size:12pt; font-weight:600;"&gt;LOGIN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+
+     <!-- USERNAME -->
+     <item>
+      <widget class="QLineEdit" name="lineEdit_user">
+       <property name="placeholderText">
+        <string>Username</string>
+       </property>
+       <property name="minimumSize">
+        <size><width>200</width><height>32</height></size>
+       </property>
+      </widget>
+     </item>
+
+     <!-- PASSWORD -->
+     <item>
+      <widget class="QLineEdit" name="lineEdit_pass">
+       <property name="placeholderText">
+        <string>Password</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="minimumSize">
+        <size><width>200</width><height>32</height></size>
+       </property>
+      </widget>
+     </item>
+
+     <!-- LOGIN BUTTON -->
+     <item>
+      <widget class="QPushButton" name="pushButton_login">
+       <property name="minimumSize">
+        <size><width>200</width><height>32</height></size>
+       </property>
+       <property name="text">
+        <string>LOGIN</string>
+       </property>
+      </widget>
+     </item>
+
+     <!-- SIGN UP BUTTON -->
+     <item>
+      <widget class="QPushButton" name="pushButton_signup">
+       <property name="minimumSize">
+        <size><width>200</width><height>32</height></size>
+       </property>
+       <property name="text">
+        <string>SIGN UP</string>
+       </property>
+      </widget>
+     </item>
+
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

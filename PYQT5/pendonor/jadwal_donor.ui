@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Jadwal Donor Darah</string>
+  </property>
+
+  <!-- ============= GLOBAL STYLE ============ -->
+  <property name="styleSheet">
+   <string notr="true">
+QMainWindow {
+    background-color: #f1f1f1;
+    font-family: "Segoe UI";
+}
+QWidget#panel {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #d0d0d0;
+}
+QPushButton {
+    background-color: #c00000;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    height: 32px;
+}
+QPushButton:hover {
+    background-color: #a00000;
+}
+QListWidget {
+    border: 1px solid #c0c0c0;
+    border-radius: 6px;
+    padding: 4px;
+    font-size: 10pt;
+}
+   </string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="panel">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>80</y>
+      <width>258</width>
+      <height>348</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <property name="leftMargin">
+      <number>15</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>15</number>
+     </property>
+     <property name="bottomMargin">
+      <number>10</number>
+     </property>
+
+     <!-- ================= TITLE ==================== -->
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;p align="center"&gt;&lt;span style=" font-size:13pt; font-weight:700; color:#c00000;"&gt;LIHAT JADWAL PENDONOR&lt;/span&gt;&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+
+     <!-- ================ SUB TITLE ================= -->
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>&lt;p align="center"&gt;&lt;span style=" font-size:10pt; font-weight:600;"&gt;Jadwal Donor&lt;/span&gt;&lt;/p&gt;</string>
+       </property>
+      </widget>
+     </item>
+
+     <!-- ================ LIST ====================== -->
+     <item>
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+
+     <!-- ================ BUTTON ===================== -->
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>125</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Refresh</string>
+       </property>
+      </widget>
+     </item>
+
+    </layout>
+   </widget>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Stok Darah</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QMainWindow {
+    background-color: #f1f1f1;
+    font-family: "Segoe UI";
+}
+
+QWidget#panel {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #d0d0d0;
+}
+
+QLabel {
+    font-weight: 600;
+}
+
+QComboBox, QLineEdit {
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+    padding: 6px;
+    background: #fafafa;
+    min-height: 28px;
+}
+
+QComboBox:hover, QLineEdit:hover {
+    border: 1px solid #c00000;
+}
+
+QGroupBox {
+    border: 1px solid #c00000;
+    border-radius: 10px;
+    margin-top: 6px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+QPushButton {
+    background-color: #c00000;
+    color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    height: 32px;
+}
+QPushButton:hover {
+    background-color: #a00000;
+}
+   </string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="panel">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>140</y>
+      <width>214</width>
+      <height>265</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>18</number>
+     </property>
+     <property name="leftMargin">
+      <number>17</number>
+     </property>
+     <property name="topMargin">
+      <number>17</number>
+     </property>
+     <property name="rightMargin">
+      <number>17</number>
+     </property>
+     <property name="bottomMargin">
+      <number>17</number>
+     </property>
+
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>STOK DARAH</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:14pt; color:#c00000; font-weight:700;</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>26</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>INFORMASI STOK DARAH</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="placeholderText">
+        <string>Masukkan stok ...</string>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>26</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>TAMBAH STOK</string>
+       </property>
+      </widget>
+     </item>
+
+    </layout>
+   </widget>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

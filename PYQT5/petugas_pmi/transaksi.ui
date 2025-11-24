@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QMainWindow {
+        background-color: #f1f1f1;
+        font-family: "Segoe UI";
+    }
+
+    QWidget#panel {
+        background-color: white;
+        border-radius: 15px;
+        border: 1px solid #d0d0d0;
+    }
+
+    QComboBox, QLineEdit {
+        border: 1px solid #aaaaaa;
+        border-radius: 8px;
+        padding: 6px;
+        background: #fafafa;
+        min-height: 28px;
+    }
+    QComboBox:hover, QLineEdit:hover {
+        border: 1px solid #c00000;
+    }
+
+    QPushButton {
+        background-color: #c00000;
+        color: white;
+        border-radius: 10px;
+        font-weight: 600;
+        height: 32px;
+    }
+    QPushButton:hover {
+        background-color: #a00000;
+    }
+
+    QLabel {
+        font-weight: 600;
+    }
+   </string>
+  </property>
+
+  <property name="windowTitle">
+   <string>Transaksi</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+
+   <widget class="QWidget" name="panel">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>80</y>
+      <width>280</width>
+      <height>400</height>
+     </rect>
+    </property>
+
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>12</number>
+     </property>
+     <property name="leftMargin">
+      <number>25</number>
+     </property>
+     <property name="topMargin">
+      <number>25</number>
+     </property>
+     <property name="rightMargin">
+      <number>25</number>
+     </property>
+     <property name="bottomMargin">
+      <number>25</number>
+     </property>
+
+     <item>
+      <widget class="QLabel" name="labelTitle">
+       <property name="text">
+        <string>TRANSAKSI</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font-size:16pt; color:#c00000; font-weight:700;</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QLabel" name="label_jenis">
+       <property name="text">
+        <string>Jenis Transaksi</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox"/>
+     </item>
+
+     <item>
+      <widget class="QLabel" name="label_goldar">
+       <property name="text">
+        <string>Golongan Darah</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_2"/>
+     </item>
+
+     <item>
+      <widget class="QLabel" name="label_jumlah">
+       <property name="text">
+        <string>Jumlah</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="placeholderText">
+        <string>Masukkan jumlah...</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QLabel" name="label_tanggal">
+       <property name="text">
+        <string>Tanggal Transaksi</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="placeholderText">
+        <string>DD/MM/YYYY</string>
+       </property>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>SIMPAN</string>
+       </property>
+      </widget>
+     </item>
+
+    </layout>
+   </widget>
+
+  </widget>
+
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
